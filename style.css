@@ -1,0 +1,55 @@
+body {
+  /* background-color: black; */
+
+  background-image: linear-gradient(135deg,
+      black,
+      rgb(242, 242, 242),
+      rgba(0, 0, 0, 0.919));
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+canvas {
+  width: 30vw;
+  height: 35vh;
+  background-color: rgba(0, 0, 0, 0.487);
+  border: 2px solid rgba(255, 255, 255, 0.481);
+  border-radius: 8px;
+  box-shadow: 1px 1px 30px #000000bb;
+}
+
+#bigbox {
+  display: flex;
+  height: 90vh;
+}
+
+.leftbox {
+  width: 50vw;
+  padding: 2vw;
+  text-align: center;
+}
+
+.rightbox {
+  display: flexbox;
+  width: 50vw;
+  padding: 5vw;
+  text-align: center;
+}
+
+#outputcan {
+  height: 50vh;
+  width: 50vw;
+}
+
+.button {
+  width: 14vw;
+  height: 4vh;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  border-radius: 4px;
+  margin: 2vw;
+}

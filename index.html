@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stegoracy</title>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1 style="text-align: center; text-decoration: line-through; color: black">
+      ___STEGORACY___
+    </h1>
+    <section id="bigbox">
+      <div class="leftbox">
+        <canvas id="showcan"></canvas>
+        <canvas id="hidecan"></canvas>
+      </div>
+      <div class="rightbox">
+        <canvas id="outputcan"></canvas>
+        <p>
+          Enter Show Image
+          <input
+            type="file"
+            multiple="false"
+            accept="image/*"
+            onchange="uploads()"
+            id="show"
+          />
+        </p>
+        <p>
+          Enter Hiding Image
+          <input
+            type="file"
+            multiple="false"
+            accept="image/*"
+            onchange="uploadh()"
+            id="hide"
+          />
+        </p>
+        <input
+          type="button"
+          value="START HIDING"
+          id="starthiding"
+          onclick="dohide()"
+          class="button"
+        />
+        <input
+          type="button"
+          value="CLEAR SCREEN"
+          onclick="clearCanvas()"
+          class="button"
+        />
+      </div>
+    </section>
+  </body>
+</html>
